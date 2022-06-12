@@ -60,16 +60,16 @@ class PlaceOrder extends Component {
      }
 
      render(){
-          if(!sessionStorage.getItem('loginStatus')){
-               return(
-                    <div>
-                         <Header/>
-                         <p id='logf'>
-                              Login First To Place Order
-                         </p>
-                    </div>
-               )
-          }
+          // if(!sessionStorage.getItem('loginStatus')){
+          //      return(
+          //           <div>
+          //                <Header/>
+          //                <p id='logf'>
+          //                     Login First To Place Order
+          //                </p>
+          //           </div>
+          //      )
+          // }
           return(
                <>
                     <Header/>
