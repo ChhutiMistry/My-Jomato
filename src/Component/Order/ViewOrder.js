@@ -3,8 +3,8 @@ import axios from 'axios';
 import OrderDisplay from './OrderDisplay';
 import Header from '../../header';
 
-const url = "https://jomato-dataset-live.herokuapp.com/viewOrder"
-const updateUrl = "https://jomato-dataset-live.herokuapp.com/updateOrder"
+const url = 'https://jomato-dataset-live.herokuapp.com/viewOrder'
+const updateUrl = 'https://jomato-dataset-live.herokuapp.com/updateOrder'
 
 class ViewOrder extends Component {
 
@@ -30,9 +30,9 @@ class ViewOrder extends Component {
                let queryp = this.props.location.search;
                if(queryp){
                     let data = {
-                         "status":queryp.split('&')[0].split('=')[1],
-                         "date":queryp.split('&')[2].split('=')[1],
-                         "bank_name":queryp.split('&')[3].split('=')[1]
+                         'status':queryp.split('&')[0].split('=')[1],
+                         'date':queryp.split('&')[2].split('=')[1],
+                         'bank_name':queryp.split('&')[3].split('=')[1]
                     }
                     let id = queryp.split('&')[1].split('=')[1].split('_')[1]
                     fetch(`${updateUrl}/${id}`,{

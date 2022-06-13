@@ -3,7 +3,7 @@ import {Link,withRouter} from 'react-router-dom';
 import DarkMode from './Component/Theme change/DarkMode';
 import './Header.css';
 
-const url = "https://jomato-login-logout-live.herokuapp.com/api/auth/userinfo"
+const url = 'https://jomato-login-logout-live.herokuapp.com/api/auth/userinfo'
 
 class Header extends Component {
 
@@ -33,14 +33,14 @@ class Header extends Component {
                     <>
                         <div className='btnlogin'>
                             <Link to='/' className='btn navvvna'>
-                                <i class="bi bi-person-circle"></i>
+                                <i className='bi bi-person-circle'></i>
                                 &nbsp;Hi {data.name}. Welcome to JOMATO
                             </Link>
                         </div> &nbsp;
                         <div className='btnlogin'>
                             <button onClick={this.handleLogout} className='btn navvvlo'>
                                 Logout&nbsp;
-                                <i class="bi bi-box-arrow-right"></i>
+                                <i className='bi bi-box-arrow-right'></i>
                             </button>
                         </div> &nbsp;
                     </>
@@ -51,12 +51,12 @@ class Header extends Component {
                     <div className='btnlogin'>
                         <Link to='/login' className='btn navvvli'>
                             Login&nbsp;
-                            <i class="bi bi-box-arrow-in-right"></i>
+                            <i className='bi bi-box-arrow-in-right'></i>
                         </Link>
                     </div> &nbsp;
                     <div className='btnlogin'>
                         <Link to='/register' className='btn navvvre'>
-                            <i class="bi bi-person-badge"></i>
+                            <i className='bi bi-person-badge'></i>
                             &nbsp;Register
                         </Link>
                     </div> &nbsp;

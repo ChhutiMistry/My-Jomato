@@ -35,24 +35,24 @@ class DetailsDisplay extends Component {
                          <>
                               <div key={item._id}>
                                    <div className='row'>
-                                        <div className="col-md-6 items">
+                                        <div className='col-md-6 items'>
                                              <b>
                                                   {item.menu_id}.
                                              </b> &nbsp;
-                                             <img src={item.menu_image} style={{width:80,height:80}} alt="Food" id='imagel'/>
+                                             <img src={item.menu_image} style={{width:80,height:80}} alt='Food' id='imagel'/>
                                              &nbsp;
                                              <span id='namel'>
                                              {item.menu_name} - ₹ {item.menu_price}
                                              </span>
                                         </div>
-                                        <div className="col-md-4 buttons">
-                                             <button className="btn btn-success"
+                                        <div className='col-md-4 buttons'>
+                                             <button className='btn btn-success'
                                              onClick={() => {this.placeOrder(item.menu_id)}}>
-                                                  Add<span className="glyphicon glyphicon-plus"/>
+                                                  Add<span className='glyphicon glyphicon-plus'/>
                                              </button> &nbsp;
-                                             <button className="btn btn-danger"
+                                             <button className='btn btn-danger'
                                              onClick={() => {this.removeOrder(item.menu_id)}}>
-                                                  Remove<span className="glyphicon glyphicon-minus"/>
+                                                  Remove<span className='glyphicon glyphicon-minus'/>
                                              </button>
                                         </div>
                                    </div>
@@ -67,13 +67,13 @@ class DetailsDisplay extends Component {
      render(){
           return(
                <div className='container-fluid'>
-                    <div className="col-md-12 heado">
+                    <div className='col-md-12 heado'>
                          <h1 id='ordero'>
                               ORDER LIST
                          </h1>
                          Item Numbers {this.renderCart(this.orderId)} Added
                     </div>
-                    <div className="col-md-12 bodyo">
+                    <div className='col-md-12 bodyo'>
                          {this.renderMenu(this.props)}
                     </div>
                </div>

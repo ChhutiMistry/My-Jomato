@@ -6,7 +6,7 @@ import CuisineFilter from '../Filter/CuisineFilter';
 import CostFilter from '../Filter/CostFilter';
 import Header from '../../header';
 
-const restUrl = "https://jomato-dataset-live.herokuapp.com/restaurants?meal_id="
+const restUrl = 'https://jomato-dataset-live.herokuapp.com/restaurants?meal_id='
 
 class Listing extends Component {
      constructor(props){
@@ -27,7 +27,7 @@ class Listing extends Component {
                <>
                     <Header/>
                     <div className='container-fluid'>
-                         <div className="row">
+                         <div className='row'>
                               <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 filter'>
                                    <h3 id='filt'>
                                         FILTERS

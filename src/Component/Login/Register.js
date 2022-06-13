@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import Header from '../../header';
 import './Register.css';
 
-const url = "https://jomato-login-logout-live.herokuapp.com/api/auth/register";
+const url = 'https://jomato-login-logout-live.herokuapp.com/api/auth/register';
 
 class Register extends Component {
 
@@ -37,43 +37,43 @@ class Register extends Component {
         return(
             <>
                 <Header/>
-                <div className="container">
+                <div className='container'>
                     <div>
                         <div id='reghe'>
                             REGISTER
                         </div>
                         <form id='regboa'>
-                            <div className="row">
-                                <div className="form-group col-md-6 regbo">
-                                    <label for="fname">
+                            <div className='row'>
+                                <div className='form-group col-md-6 regbo'>
+                                    <label for='fname'>
                                         First Name
                                     </label>
-                                    <input id="fname" type="text" name="name" className="form-control"
+                                    <input id='fname' type='text' name='name' className='form-control'
                                     value={this.state.name} onChange={this.handleChange}/>
                                 </div>
-                                <div className="form-group col-md-6 regbo">
-                                    <label for="phone">
+                                <div className='form-group col-md-6 regbo'>
+                                    <label for='phone'>
                                         Contact Number
                                     </label>
-                                    <input id="phone" type="digits" name="phone" className="form-control"
+                                    <input id='phone' type='digits' name='phone' className='form-control'
                                     value={this.state.phone} onChange={this.handleChange}/>
                                 </div>
-                                <div className="form-group col-md-6 regbo">
-                                    <label for="email">
+                                <div className='form-group col-md-6 regbo'>
+                                    <label for='email'>
                                         Email Address
                                     </label>
-                                    <input id="email" type="email" name="email" className="form-control"
+                                    <input id='email' type='email' name='email' className='form-control'
                                     value={this.state.email} onChange={this.handleChange} required/>
                                 </div>
-                                <div className="form-group col-md-6 regbo">
-                                    <label for="password">
+                                <div className='form-group col-md-6 regbo'>
+                                    <label for='password'>
                                         Password
                                     </label>
-                                    <input id="password" type="password" name="password" className="form-control"
+                                    <input id='password' type='password' name='password' className='form-control'
                                     value={this.state.password} onChange={this.handleChange} required/>
                                 </div>
                             </div>
-                            <button className="btn regbu" type='register' onClick={this.register}>
+                            <button className='btn regbu' type='register' onClick={this.register}>
                                 Register
                             </button>
                         </form>

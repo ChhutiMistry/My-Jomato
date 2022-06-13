@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import './PlaceOrder.css';
 import Header from '../../header';
 
-const url = "https://jomato-dataset-live.herokuapp.com/menuItem";
-const purl = "https://jomato-dataset-live.herokuapp.com/placeOrder";
+const url = 'https://jomato-dataset-live.herokuapp.com/menuItem';
+const purl = 'https://jomato-dataset-live.herokuapp.com/placeOrder';
 
 class PlaceOrder extends Component {
 
@@ -82,7 +82,7 @@ class PlaceOrder extends Component {
                                    </div>
                               </div>
                               <div className='panel-body'>
-                                   <form action="https://jomato-payment-gateway-live.herokuapp.com/paynow" method='POST'>
+                                   <form action='https://jomato-payment-gateway-live.herokuapp.com/paynow' method='POST'>
                                         <input type='hidden' name='cost' value={this.state.cost}/>
                                         <input type='hidden' name='id' value={this.state.id}/>
                                         <input type='hidden' name='rest_name' value={this.state.hotel_name}/>

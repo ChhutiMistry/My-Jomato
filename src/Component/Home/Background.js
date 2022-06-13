@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 const Background = (props) => {
 
     const listMeal = ({mealData}) => {
-        console.log(">>>mealData111",mealData)
+        console.log('>>>mealData111',mealData)
         if(mealData){
-            console.log(">>>mealData",mealData)
+            console.log('>>>mealData',mealData)
             return mealData.map((item) => {
                 return(
                     <Link to={`/listing/${item.mealtype_id}`} key={item._id}>
@@ -27,7 +27,7 @@ const Background = (props) => {
     }
 
     return(
-        <div id="mainContainer">
+        <div id='mainContainer'>
             {listMeal(props)}
         </div> 
     )

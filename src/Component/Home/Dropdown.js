@@ -2,15 +2,15 @@ import React,{Component} from 'react';
 import { withRouter } from 'react-router-dom';
 import './Dropdown.css';
 
-const url = "https://jomato-dataset-live.herokuapp.com/location"
-const restUrl = "https://jomato-dataset-live.herokuapp.com/restaurants?state_id="
+const url = 'https://jomato-dataset-live.herokuapp.com/location'
+const restUrl = 'https://jomato-dataset-live.herokuapp.com/restaurants?state_id='
 
 class Dropdown extends Component{
 
     constructor(props){
         super(props)
 
-        console.log(">>>>inside constructor")
+        console.log('>>>>inside constructor')
         this.state={
             location:'',
             restaurants:''
@@ -43,7 +43,7 @@ class Dropdown extends Component{
 
     handleRestaurants = (event) => {
         let restId = event.target.value;
-        console.log(">>>>inside",restId)
+        console.log('>>>>inside',restId)
         this.props.history.push(`/details?restId=${restId}`)
     }
 
@@ -57,27 +57,27 @@ class Dropdown extends Component{
     }
 
     render(){
-        console.log(">>>>inside render")
+        console.log('>>>>inside render')
         return(
-            <div id="front">
-                <div id="imagelogoc">
-                    <img src="https://i.ibb.co/3SfhyK5/Alphabet-J.png" alt="Icon" id="logo" className='img-thumbnail img-responsive'/>
+            <div id='front'>
+                <div id='imagelogoc'>
+                    <img src='https://i.ibb.co/3SfhyK5/Alphabet-J.png' alt='Icon' id='logo' className='img-thumbnail img-responsive'/>
                 </div>
-                <p id="headline">
+                <p id='headline'>
                     Get to know about the best eatables available around
                 </p>
-                <div id="drop">
-                    <div className='dropdown' id="dropcity">
-                        <select className='btn-warning dropdown-toggle droph' type="button" data-bs-toggle="dropdown"
-                        id="city" onChange={this.handleCity}>
+                <div id='drop'>
+                    <div className='dropdown' id='dropcity'>
+                        <select className='btn-warning dropdown-toggle droph' type='button' data-bs-toggle='dropdown'
+                        id='city' onChange={this.handleCity}>
                             <option>
                                 ----- SELECT CITY -----
                             </option>
                             {this.renderCity(this.state.location)}
                         </select>
                     </div>
-                    <div className='dropdown' id="droprest">
-                        <select className='btn-warning dropdown-toggle droph' type="button" data-bs-toggle="dropdown" id="restaurant" onChange={this.handleRestaurants}>
+                    <div className='dropdown' id='droprest'>
+                        <select className='btn-warning dropdown-toggle droph' type='button' data-bs-toggle='dropdown' id='restaurant' onChange={this.handleRestaurants}>
                             <option>
                                 ----- SELECT RESTAURANT -----
                             </option>
@@ -90,7 +90,7 @@ class Dropdown extends Component{
     }
 
     componentDidMount(){
-        console.log(">>>>inside componentDidMount")
+        console.log('>>>>inside componentDidMount')
         fetch(url,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {

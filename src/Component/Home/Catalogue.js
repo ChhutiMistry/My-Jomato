@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './Catalogue.css';
 import Background from './Background';
 
-const url = "https://jomato-dataset-live.herokuapp.com/mealtype"
+const url = 'https://jomato-dataset-live.herokuapp.com/mealtype'
 
 class Catalogue extends Component{
 
@@ -17,8 +17,8 @@ class Catalogue extends Component{
     render(){
         return(
             <div>
-                <div id="catalogue">
-                    <Link to="/listing/1" id="list">
+                <div id='catalogue'>
+                    <Link to='/listing/1' id='list'>
                         CATALOGUE
                     </Link>
                     <Background mealData={this.state.mealType}/>

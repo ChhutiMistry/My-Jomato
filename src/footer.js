@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <footer className='footer'>
                 <div>
-                    <ul class="vertical">
+                    <ul className='vertical'>
                         <li>
                             Blog
                         </li>
@@ -18,7 +18,7 @@ class Footer extends Component {
                             About me
                         </li>
                     </ul>
-                    <ul class="vertical">
+                    <ul className='vertical'>
                         <li>
                             Code of Conduct
                         </li>
@@ -29,7 +29,7 @@ class Footer extends Component {
                             Mobile Apps
                         </li>
                     </ul>
-                    <ul class="vertical">
+                    <ul className='vertical'>
                         <li>
                             Privacy
                         </li>
@@ -44,7 +44,7 @@ class Footer extends Component {
                         </li>
                     </ul>
                 </div>
-                <div id="copy">
+                <div id='copy'>
                     <span>
                         Chhuti Mistry; &copy; 2022
                     </span>

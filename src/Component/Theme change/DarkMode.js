@@ -1,9 +1,9 @@
-import React from "react";
-import {ThemeProvider} from "styled-components";
-import  {useDarkMode} from "./useDarkMode"
-import { GlobalStyles } from "./globalStyles";
-import { lightTheme, darkTheme } from "./Themes";
-import Toggle from "./Toggler";
+import React from 'react';
+import {ThemeProvider} from 'styled-components';
+import  {useDarkMode} from './useDarkMode'
+import { GlobalStyles } from './globalStyles';
+import { lightTheme, darkTheme } from './Themes';
+import Toggle from './Toggler';
 
 const DarkMode = () => {
      const [theme, themeToggler] = useDarkMode();
@@ -12,7 +12,7 @@ const DarkMode = () => {
      <ThemeProvider theme={themeMode}>
           <>
                <GlobalStyles/>
-               <div className="App">
+               <div className='App'>
                     <Toggle theme={theme} toggleTheme={themeToggler} />
                </div>
           </>
