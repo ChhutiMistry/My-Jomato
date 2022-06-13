@@ -3,7 +3,7 @@ import {Link,withRouter} from 'react-router-dom';
 import DarkMode from './Component/Theme change/DarkMode';
 import './Header.css';
 
-const url = "http://jomato-login-logout-live.herokuapp.com/api/auth/userinfo"
+const url = "https://jomato-login-logout-live.herokuapp.com/api/auth/userinfo"
 
 class Header extends Component {
 
