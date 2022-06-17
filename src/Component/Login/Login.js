@@ -55,14 +55,14 @@ class Login extends Component {
                             </p>
                             <div className='row'>
                                 <div className='form-group col-md-6 logbo'>
-                                    <label for='email'>
+                                    <label htmlFor='email'>
                                         Email Address
                                     </label>
                                     <input id='email' type='email' name='email' className='form-control'
                                     value={this.state.email} onChange={this.handleChange} required/>
                                 </div>
                                 <div className='form-group col-md-6 logbo'>
-                                    <label for='password'>
+                                    <label htmlFor='password'>
                                         Password
                                     </label>
                                     <input id='password' type='password' name='password' className='form-control'

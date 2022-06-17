@@ -60,3 +60,30 @@
      font-weight: bold;
      margin: 5%;
 }
+
+#orderhb{
+     font-size: 40px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+     margin-top: 2%;
+     margin-bottom: 1%;
+}
+
+.mytab{
+     font-size: 18px;
+     border-color: #493e02;
+     border-width: 3px;
+     border-style: solid;
+}
+
+.tabhe{
+     border-color: #583705;
+     border-width: 2px;
+     border-style: solid;
+}
+
+.tabbo{
+     border-right-color: #666b07;
+     border-right-width: 2px;
+     border-right-style: solid;
+}

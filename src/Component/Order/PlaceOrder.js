@@ -88,28 +88,28 @@ class PlaceOrder extends Component {
                                         <input type='hidden' name='rest_name' value={this.state.hotel_name}/>
                                         <div className='row'>
                                              <div className='form-group col-md-6'>
-                                                  <label for='fname'>
+                                                  <label htmlFor='fname'>
                                                        First Name
                                                   </label>
                                                   <input id='fname' name='name' className='form-control'
                                                   value={this.state.name} onChange={this.handleChange}/>
                                              </div>
                                              <div className='form-group col-md-6'>
-                                                  <label for='email'>
+                                                  <label htmlFor='email'>
                                                        Email
                                                   </label>
                                                   <input id='email' name='email' className='form-control'
                                                   value={this.state.email} onChange={this.handleChange}/>
                                              </div>
                                              <div className='form-group col-md-6'>
-                                                  <label for='phone'>
+                                                  <label htmlFor='phone'>
                                                        Phone
                                                   </label>
                                                   <input id='phone' name='phone' className='form-control'
                                                   value={this.state.phone} onChange={this.handleChange}/>
                                              </div>
                                              <div className='form-group col-md-6'>
-                                                  <label for='address'>
+                                                  <label htmlFor='address'>
                                                        Address
                                                   </label>
                                                   <input id='address' name='address' className='form-control'

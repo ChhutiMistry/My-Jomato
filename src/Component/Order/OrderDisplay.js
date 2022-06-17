@@ -1,4 +1,5 @@
 import React from 'react';
+import './PlaceOrder.css';
 
 const OrderDisplay = (props) => {
 
@@ -7,28 +8,28 @@ const OrderDisplay = (props) => {
                return orderData.map((item) => {
                     return(
                          <tr key={item.id}>
-                              <td>
+                              <td className='tabbo'>
                                    {item.id}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.hotel_name}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.name}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.phone}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.email}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    ₹ {item.cost}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.date}
                               </td>
-                              <td>
+                              <td className='tabbo'>
                                    {item.status}
                               </td>
                               <td>
@@ -41,38 +42,38 @@ const OrderDisplay = (props) => {
      }
 
      return(
-          <div className='container'>
-               <h2>
-                    Orders
-               </h2>
-               <table className='table'>
+          <div className='container-fluid'>
+               <p id='orderhb'>
+                    ORDER HISTORY
+               </p>
+               <table className='table table-hover mytab'>
                     <thead>
                          <tr>
-                              <th>
+                              <th className='tabhe'>
                                    Order Number
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Restaurant Name
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Name
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Contact Number
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Email Address
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Cost
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Date
                               </th>  
-                              <th>
+                              <th className='tabhe'>
                                    Transaction Status
                               </th>   
-                              <th>
+                              <th className='tabhe'>
                                    Bank Name
                               </th>  
                          </tr>
