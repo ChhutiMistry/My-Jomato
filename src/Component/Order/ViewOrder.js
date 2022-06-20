@@ -35,7 +35,10 @@ class ViewOrder extends Component {
                          'bank_name':queryp.split('&')[3].split('=')[1]
                     }
                     let id = queryp.split('&')[1].split('=')[1].split('_')[1]
-                    fetch(`${updateUrl}/${id}`,{
+                    fetch(`${updateUrl}/${id}`,
+                         setTimeout(() => {
+                              fetch();
+                         }, 20000);{
                          method:'PUT',
                          headers:{
                          'Accept':'application/json',
@@ -43,9 +46,6 @@ class ViewOrder extends Component {
                          },
                          body: JSON.stringify(data)
                     })
-                    setTimeout(() => {
-                         fetch();
-                    }, 20000);
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
