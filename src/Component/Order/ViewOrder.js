@@ -46,10 +46,18 @@ class ViewOrder extends Component {
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
-          axios.get(`${url}?email=${email}`,
-               setTimeout(() => {
-                    fetch();
-               }, 5000);).then((res) => {this.setState({orders:res.data})})
+          // axios.get(`${url}?email=${email}`,).then((res) => {this.setState({orders:res.data})})
+          // useEffect(() => {
+               const getData = setTimeout(() => {
+                 axios
+                 .get(`${url}?email=${email}`,)
+                 .then((res) => {
+                    this.setState({orders:res.data})
+                 });
+               }, 5000)
+           
+               // return () => clearTimeout(getData)
+          //    }, [data])
      }
 }
 
