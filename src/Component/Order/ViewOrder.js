@@ -43,10 +43,13 @@ class ViewOrder extends Component {
                          },
                          body: JSON.stringify(data)
                     })
+                    const timer = setTimeout(() => {
+                         fetch();
+                    }, 5000);
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
-          axios.get(`${url}?email=${email}`).then((res) => {this.setState({orders:res.data})}, delay)
+          axios.get(`${url}?email=${email}`).then((res) => {this.setState({orders:res.data})})
      }
 }
 
