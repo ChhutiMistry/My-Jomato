@@ -42,10 +42,10 @@ class ViewOrder extends Component {
                          'Content-Type':'application/json'
                          },
                          body: JSON.stringify(data)
-                    })
-                    const timer = setTimeout(() => {
+                    }
+                    setTimeout(() => {
                          fetch();
-                    }, 5000);
+                    }, 5000);)
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
