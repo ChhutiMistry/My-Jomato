@@ -45,7 +45,7 @@ class ViewOrder extends Component {
                     })
                     setTimeout(() => {
                          fetch();
-                    }, 5000);
+                    }, 20000);
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
