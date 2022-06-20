@@ -35,10 +35,7 @@ class ViewOrder extends Component {
                          'bank_name':queryp.split('&')[3].split('=')[1]
                     }
                     let id = queryp.split('&')[1].split('=')[1].split('_')[1]
-                    fetch(`${updateUrl}/${id}`,
-                         setTimeout(() => {
-                              fetch();
-                         }, 20000);{
+                    fetch(`${updateUrl}/${id}`,{
                          method:'PUT',
                          headers:{
                          'Accept':'application/json',
@@ -49,6 +46,9 @@ class ViewOrder extends Component {
                }
           }
           let email = sessionStorage.getItem('userInfo').split(',')[1];
+          setTimeout(() => {
+               fetch();
+          }, 5000);
           axios.get(`${url}?email=${email}`).then((res) => {this.setState({orders:res.data})})
      }
 }
